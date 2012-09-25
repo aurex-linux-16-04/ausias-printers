@@ -19,7 +19,7 @@ set -e
 PKG_NAME="ausias-printers-depinf"
 case "$1" in
     remove|upgrade|deconfigure)
-	for f in ls -1 /usr/share/$PKG_NAME/ ; do
+	for f in $(ls -1 /usr/share/$PKG_NAME/) ; do
                 rm -f "/etc/aurex-lpadmin/printers.d/$f"
         done
 	DEF_LINK="/etc/aurex-lpadmin/default"

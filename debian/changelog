@@ -1,3 +1,9 @@
+ausias-printers (0.2) precise; urgency=low
+
+  * Fixed maintainer's scripts
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 25 Sep 2012 18:34:51 +0200
+
 ausias-printers (0.1) precise; urgency=low
 
   * Initial release

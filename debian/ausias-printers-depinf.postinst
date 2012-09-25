@@ -2,7 +2,7 @@
 PKG_NAME="ausias-printers-depinf"
 case "$1" in
     configure)
-	for f in ls -1 /usr/share/$PKG_NAME/ ; do
+	for f in $(ls -1 /usr/share/$PKG_NAME/) ; do
 		cp "/usr/share/$PKG_NAME/$f" "/etc/aurex-lpadmin/printers.d/$f"
 	done
 	aurex-lpadmin update
