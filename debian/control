@@ -1,0 +1,20 @@
+Source: ausias-printers
+Section: admin
+Priority: optional
+Maintainer: Luis Antonio Garcia Gisbert <luisgg@gmail.com>
+Build-Depends: debhelper (>= 7.0)
+Standards-Version: 3.9.3
+
+Package: ausias-printers-centro
+Architecture: all
+Depends: ${misc:Depends}, openprinting-ppds, aurex-lpadmin
+Description: CIPFP Ausias March intranet printer configuration
+ This package installs and configures network printers of
+ CIPFP Ausias March intranet.
+
+Package: ausias-printers-depinf
+Architecture: all
+Depends: ${misc:Depends}, printer-driver-gutenprint, aurex-lpadmin
+Description: CIPFP Ausias March intranet printer configuration
+ This package installs and configures specific network printers of
+ 'Departamento de Informatica' in CIPFP Ausias March intranet.
