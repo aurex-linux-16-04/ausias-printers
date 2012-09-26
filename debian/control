@@ -7,14 +7,14 @@ Standards-Version: 3.9.3
 
 Package: ausias-printers-centro
 Architecture: all
-Depends: ${misc:Depends}, openprinting-ppds, aurex-lpadmin
+Depends: ${misc:Depends}, openprinting-ppds, aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures network printers of
  CIPFP Ausias March intranet.
 
 Package: ausias-printers-depinf
 Architecture: all
-Depends: ${misc:Depends}, printer-driver-gutenprint, aurex-lpadmin
+Depends: ${misc:Depends}, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Departamento de Informatica' in CIPFP Ausias March intranet.

@@ -1,3 +1,9 @@
+ausias-printers (0.3) precise; urgency=low
+
+  * Added ausias-papercut-client as depends
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 26 Sep 2012 08:13:21 +0200
+
 ausias-printers (0.2) precise; urgency=low
 
   * Fixed maintainer's scripts
