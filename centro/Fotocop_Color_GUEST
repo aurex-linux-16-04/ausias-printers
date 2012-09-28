@@ -1,4 +1,3 @@
 # Ausias March Color Printer
 PRINTER_PPD="openprinting-ppds:0/ppd/openprinting/Ricoh/PXL/Ricoh-Aficio_MP_C2500_PXL.ppd"
-PRINTER_URI="ipp://fsserver:631/printers/Fotocop_Color"
-PRINTER_OPTIONS="-u allow @Domain\ Users"
+PRINTER_URI="ipp://fsserver:631/printers/Fotocop_Color_DS"

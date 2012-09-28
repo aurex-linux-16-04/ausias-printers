@@ -1,3 +1,10 @@
+ausias-printers (0.4) precise; urgency=low
+
+  * Added _GUEST printers
+  * Limit access to 'Domain Users' in not 'GUEST' printers
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 28 Sep 2012 16:09:11 +0200
+
 ausias-printers (0.3) precise; urgency=low
 
   * Added ausias-papercut-client as depends
