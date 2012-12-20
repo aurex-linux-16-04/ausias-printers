@@ -1,0 +1,3 @@
+# Depinf printer
+PRINTER_PPD="gutenprint.5.2://pcl-g_6_l/expert"
+PRINTER_URI="ipp://fsserver:631/printers/Fol_DS"
