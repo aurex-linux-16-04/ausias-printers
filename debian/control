@@ -25,3 +25,10 @@ Depends: ${misc:Depends}, printer-driver-gutenprint, aurex-lpadmin, ausias-paper
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Fol' in CIPFP Ausias March intranet.
+
+Package: ausias-printers-secretaria
+Architecture: all
+Depends: ${misc:Depends}, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Description: CIPFP Ausias March intranet printer configuration
+ This package installs and configures specific network printers of
+ 'Secretaria' in CIPFP Ausias March intranet.

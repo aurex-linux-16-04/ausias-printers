@@ -1,3 +1,9 @@
+ausias-printers (0.7) precise; urgency=low
+
+  * Added ausias-printers-secretaria binary package
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Thu, 25 Apr 2013 16:22:30 +0200
+
 ausias-printers (0.6) precise; urgency=low
 
   * Added ausias-printers-fol binary package
