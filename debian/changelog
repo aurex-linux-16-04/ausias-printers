@@ -1,3 +1,10 @@
+ausias-printers (0.9) precise; urgency=low
+
+  * Update all the printer packages to reflect queue names and
+    drivers changes (bye bye Dismaco ...)
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 21 May 2014 03:04:22 +0200
+
 ausias-printers (0.8) precise; urgency=low
 
   * Added Samsung ML-3710 to  ausias-printers-secretaria
