@@ -5,7 +5,7 @@ case "$1" in
 	for f in $(ls -1 /usr/share/$PKG_NAME/) ; do
 		cp "/usr/share/$PKG_NAME/$f" "/etc/aurex-lpadmin/printers.d/$f"
 	done
-	DEF_PRINT="/etc/aurex-lpadmin/printers.d/ClickControl"
+	DEF_PRINT="/etc/aurex-lpadmin/printers.d/AusiasPrint"
         DEF_LINK="/etc/aurex-lpadmin/default"
 	if [ -r "$DEF_PRINT" ] && [ ! -e "$DEF_LINK" ] ; then
 		ln -s "$DEF_PRINT" "$DEF_LINK"
