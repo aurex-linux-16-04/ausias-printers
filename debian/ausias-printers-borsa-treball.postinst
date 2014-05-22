@@ -1,5 +1,5 @@
 #!/bin/sh -e
-PKG_NAME="ausias-printers-borsa"
+PKG_NAME="ausias-printers-borsa-treball"
 case "$1" in
     configure)
 	for f in $(ls -1 /usr/share/$PKG_NAME/) ; do
