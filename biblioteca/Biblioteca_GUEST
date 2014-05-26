@@ -1,0 +1,3 @@
+# Biblioteca printer
+PRINTER_PPD="lsb/usr/konica-minolta/P4650PX.ppd"
+PRINTER_URI="ipp://fsserver:631/printers/Biblioteca_DS"

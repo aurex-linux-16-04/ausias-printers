@@ -14,42 +14,49 @@ Description: CIPFP Ausias March intranet printer configuration
 
 Package: ausias-printers-depinf
 Architecture: all
-Depends: ${misc:Depends}, konica-minolta-ppds, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Departamento de Informatica' in CIPFP Ausias March intranet.
 
 Package: ausias-printers-fol
 Architecture: all
-Depends: ${misc:Depends}, konica-minolta-ppds, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Fol' in CIPFP Ausias March intranet.
 
 Package: ausias-printers-secretaria
 Architecture: all
-Depends: ${misc:Depends}, konica-minolta-ppds, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), openprinting-ppds, aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Secretaria' in CIPFP Ausias March intranet.
 
 Package: ausias-printers-orientacio
 Architecture: all
-Depends: ${misc:Depends}, konica-minolta-ppds, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Orientacio' in CIPFP Ausias March intranet.
 
 Package: ausias-printers-tic
 Architecture: all
-Depends: ${misc:Depends}, konica-minolta-ppds, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'TIC' in CIPFP Ausias March intranet.
 
 Package: ausias-printers-borsa-treball
 Architecture: all
-Depends: ${misc:Depends}, konica-minolta-ppds, printer-driver-gutenprint, aurex-lpadmin, ausias-papercut-client
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), aurex-lpadmin, ausias-papercut-client
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Borsa de Treball' in CIPFP Ausias March intranet.
+
+Package: ausias-printers-biblioteca
+Architecture: all
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.2), aurex-lpadmin, ausias-papercut-client
+Description: CIPFP Ausias March intranet printer configuration
+ This package installs and configures specific network printers of
+ 'Biblioteca' in CIPFP Ausias March intranet.
