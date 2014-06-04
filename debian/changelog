@@ -1,3 +1,10 @@
+ausias-printers (0.13) precise; urgency=low
+
+  * Replaced PPD for Konica Minolta Bizhub 20p (we are
+    currently using Samsung ML-3471 pxl driver)
+
+ -- Sandra Villanueva Gavino <savilga@gmail.com>  Wed, 04 Jun 2014 19:37:10 +0200
+
 ausias-printers (0.12) precise; urgency=low
 
   *  Added ausias-printers-biblioteca binary package
