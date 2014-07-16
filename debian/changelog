@@ -1,3 +1,10 @@
+ausias-printers (0.14) precise; urgency=low
+
+  * ausias-printers-secretaria: Use P4650PX_DUPLEX.ppd for
+    'Secretaria-Konica printer'
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 16 Jul 2014 13:24:31 +0200
+
 ausias-printers (0.13) precise; urgency=low
 
   * Replaced PPD for Konica Minolta Bizhub 20p (we are
