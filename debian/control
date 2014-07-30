@@ -60,3 +60,12 @@ Depends: ${misc:Depends}, konica-minolta-ppds (>=0.3), aurex-lpadmin, ausias-pap
 Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Biblioteca' in CIPFP Ausias March intranet.
+
+Package: ausias-printers-caporalia
+Architecture: all
+Depends: ${misc:Depends}, konica-minolta-ppds (>=0.3), aurex-lpadmin, ausias-papercut-client
+Description: CIPFP Ausias March intranet printer configuration
+ This package installs and configures specific network printers of
+ 'Caporalia Estudis' in CIPFP Ausias March intranet.
+
+

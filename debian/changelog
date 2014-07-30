@@ -1,3 +1,9 @@
+ausias-printers (0.15) precise; urgency=low
+
+  * Added new binary package 'ausias-printers-caporalia'
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 30 Jul 2014 11:14:36 +0200
+
 ausias-printers (0.14) precise; urgency=low
 
   * ausias-printers-secretaria: Use P4650PX_DUPLEX.ppd for
