@@ -1,0 +1,31 @@
+#!/bin/sh
+date -R >> /tmp/cups-pdf-luis.log
+echo "$@" >> /tmp/cups-pdf-luis.log
+export >> /tmp/cups-pdf-luis.log
+CURRENT_PDF="${1}"
+CURRENT_USER="${2}"
+DISPLAY=:0.0
+export DISPLAY
+USERHOME="$(getent passwd ${CURRENT_USER} |cut -d : -f 6)"
+XAUTHORITY="$USERHOME/.Xauthority"
+export XAUTHORITY
+NOM=""
+APE=""
+
+stripstring(){
+	echo "$1" |sed -e "s%[[:blank:]]%_%g" | iconv -f utf-8 -t us-ascii//TRANSLIT
+}
+
+while [ -z "$NOM" ] || [ -z "$APE" ] ; do
+	NOMAPE="$(yad  --on-top --separator="_" --title "Select Host" --text "Introduzca nombre y apellidos para identificar su trabajo" --form --field="Nombre" --field="Apellidos")"
+	NOM="${NOMAPE%%_*}"
+	APE="${NOMAPE#*_}"
+	APE="${APE%_}"
+done
+
+
+PDFNAME="$(stripstring "$NOM $APE")_$(date "+%F_%s").pdf"
+
+date -R >> /tmp/cups-pdf-luis.log
+ 
+mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" 

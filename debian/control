@@ -68,4 +68,11 @@ Description: CIPFP Ausias March intranet printer configuration
  This package installs and configures specific network printers of
  'Caporalia Estudis' in CIPFP Ausias March intranet.
 
-
+Package: ausias-pdf-printer
+Architecture: all
+Depends: ${misc:Depends}, datastore-client, aurex-lpadmin, yad, cups-pdf
+Description: Generate PDFs shared with CIPFP Ausias March conserjeria
+ The package installs and configures a custom cups-pdf printer that
+ stores generated PDF files in a shared network location, to make them
+ available to conserjeria staff of the CIPFP Ausias March (and thus
+ facilitating later printing)
