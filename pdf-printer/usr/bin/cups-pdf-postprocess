@@ -1,7 +1,10 @@
 #!/bin/sh
-date -R >> /tmp/cups-pdf-luis.log
-echo "$@" >> /tmp/cups-pdf-luis.log
-export >> /tmp/cups-pdf-luis.log
+#date -R >> /tmp/cups-pdf-luis.log
+#echo "$@" >> /tmp/cups-pdf-luis.log
+#export >> /tmp/cups-pdf-luis.log
+
+# use environment variable $PRINTER
+
 CURRENT_PDF="${1}"
 CURRENT_USER="${2}"
 DISPLAY=:0.0
