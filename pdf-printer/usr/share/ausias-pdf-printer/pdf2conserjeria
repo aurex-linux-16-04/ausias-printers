@@ -1,0 +1,3 @@
+# Depinf printer
+PRINTER_PPD="/usr/share/ppd/cups-pdf/CUPS-PDF.ppd"
+PRINTER_URI="cups-pdf:/"

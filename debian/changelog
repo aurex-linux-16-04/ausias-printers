@@ -1,6 +1,13 @@
+ausias-printers (0.21) trusty; urgency=medium
+
+  * new binary ausias-pdf-printer to enable anonymous deferred
+    printing
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 28 Apr 2015 17:02:47 +0200
+
 ausias-printers (0.20) trusty; urgency=medium
 
-  * Rebuild fore aurex 14.04 trusty
+  * Rebuild for aurex 14.04 trusty
 
  -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 29 Aug 2014 03:04:44 +0200
 
