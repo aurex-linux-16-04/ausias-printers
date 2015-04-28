@@ -1,9 +1,7 @@
 #!/bin/sh
-#date -R >> /tmp/cups-pdf-luis.log
-#echo "$@" >> /tmp/cups-pdf-luis.log
-#export >> /tmp/cups-pdf-luis.log
-
-# use environment variable $PRINTER
+# read environment variable $PRINTER to verify
+# that we are processing the correct printer
+[ "$PRINTER" = "pdf2conserjeria" ] || exit 0
 
 CURRENT_PDF="${1}"
 CURRENT_USER="${2}"
@@ -20,7 +18,7 @@ stripstring(){
 }
 
 while [ -z "$NOM" ] || [ -z "$APE" ] ; do
-	NOMAPE="$(yad  --on-top --separator="_" --title "Select Host" --text "Introduzca nombre y apellidos para identificar su trabajo" --form --field="Nombre" --field="Apellidos")"
+	NOMAPE="$(yad  --on-top --separator="_" --title "pdf2conserjeria" --text "Introduzca nombre y apellidos para identificar su trabajo" --form --field="Nombre" --field="Apellidos")"
 	NOM="${NOMAPE%%_*}"
 	APE="${NOMAPE#*_}"
 	APE="${APE%_}"
@@ -29,6 +27,7 @@ done
 
 PDFNAME="$(stripstring "$NOM $APE")_$(date "+%F_%s").pdf"
 
-date -R >> /tmp/cups-pdf-luis.log
- 
-mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" 
+mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" A
+
+yad  --on-top --title "pdf2conserjeria" --text "   Su trabajo ha sido enviado con el nombre:\n   $PDFNAME\n   Para recogerlo, acuda a Conserjeria\n   y solicite que se lo impriman.   " --button=gtk-ok || true
+
