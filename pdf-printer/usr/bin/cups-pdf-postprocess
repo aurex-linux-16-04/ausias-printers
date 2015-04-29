@@ -27,7 +27,12 @@ done
 
 PDFNAME="$(stripstring "$NOM $APE")_$(date "+%F_%s").pdf"
 
-mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" A
+#mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" A
+if ausias-ds-putfile -n PDF2Conserjeria -f "$PDFNAME" "$CURRENT_PDF" ; then
+	msgtxt="   Su trabajo ha sido enviado con el nombre:\n   $PDFNAME\n   Para recogerlo, acuda a Conserjeria\n   y solicite que se lo impriman.   "
+else
+	msgtxt="   Ha ocurrido un error. Por favor vuelva a imprimir el documento.   "
+fi
 
-yad  --on-top --title "pdf2conserjeria" --text "   Su trabajo ha sido enviado con el nombre:\n   $PDFNAME\n   Para recogerlo, acuda a Conserjeria\n   y solicite que se lo impriman.   " --button=gtk-ok || true
+yad  --on-top --title "pdf2conserjeria" --text "$msgtxt" --button=gtk-ok || true
 

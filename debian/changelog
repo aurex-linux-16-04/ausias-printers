@@ -1,3 +1,9 @@
+ausias-printers (0.22) trusty; urgency=medium
+
+  * Change depends to ausias-datastore-client
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 29 Apr 2015 18:57:23 +0200
+
 ausias-printers (0.21) trusty; urgency=medium
 
   * new binary ausias-pdf-printer to enable anonymous deferred
