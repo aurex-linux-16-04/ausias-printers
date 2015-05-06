@@ -1,3 +1,9 @@
+ausias-printers (0.23) trusty; urgency=medium
+
+  *  New binary package: ausias-pdf-printer-set-default
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 06 May 2015 17:58:32 +0200
+
 ausias-printers (0.22) trusty; urgency=medium
 
   * Change depends to ausias-datastore-client

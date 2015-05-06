@@ -76,3 +76,11 @@ Description: Generate PDFs shared with CIPFP Ausias March conserjeria
  stores generated PDF files in a shared network location, to make them
  available to conserjeria staff of the CIPFP Ausias March (and thus
  facilitating later printing)
+
+Package: ausias-pdf-printer-set-default
+Architecture: all
+Depends: ${misc:Depends}, aurex-lpadmin
+Pre-Depends: ausias-pdf-printer
+Description: Set ausias pdf-printer as default printer
+ This package sets ausias pdf-printer as default printer
+
