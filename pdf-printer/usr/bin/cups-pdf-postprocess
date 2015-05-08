@@ -17,22 +17,33 @@ stripstring(){
 	echo "$1" |sed -e "s%[[:blank:]]%_%g" | iconv -f utf-8 -t us-ascii//TRANSLIT
 }
 
-while [ -z "$NOM" ] || [ -z "$APE" ] ; do
+ret=0
+while [ $ret -eq 0 ] && [ -z "$NOM" -o -z "$APE" ] ; do
 	NOMAPE="$(yad  --on-top --separator="_" --title "pdf2conserjeria" --text "Introduzca nombre y apellidos para identificar su trabajo" --form --field="Nombre" --field="Apellidos")"
-	NOM="${NOMAPE%%_*}"
-	APE="${NOMAPE#*_}"
-	APE="${APE%_}"
+	ret=$?
+	if [ $ret -ne 0 ] ; then
+		if yad --on-top --image "dialog-question" --title "pdf2conserjeria" --button=gtk-yes:0 --button=gtk-no:1 --text "¿Está seguro que quiere cancelar la impresión?" ; then
+			msgtxt="   Su trabajo ha sido cancelado.   "
+			ret=1
+		else
+			ret=0
+		fi
+	else
+		NOM="${NOMAPE%%_*}"
+		APE="${NOMAPE#*_}"
+		APE="${APE%_}"
+	fi
 done
 
+if [ $ret -eq 0 ] ; then
+	PDFNAME="$(stripstring "$NOM $APE")_$(date "+%F_%s").pdf"
 
-PDFNAME="$(stripstring "$NOM $APE")_$(date "+%F_%s").pdf"
-
-#mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" A
-if ausias-ds-putfile -n PDF2Conserjeria -f "$PDFNAME" "$CURRENT_PDF" ; then
-	msgtxt="   Su trabajo ha sido enviado con el nombre:\n   $PDFNAME\n   Para recogerlo, acuda a Conserjeria\n   y solicite que se lo impriman.   "
-else
-	msgtxt="   Ha ocurrido un error. Por favor vuelva a imprimir el documento.   "
+	#mv "$CURRENT_PDF" "$USERHOME/PDF/$PDFNAME" A
+	if ausias-ds-putfile -n PDF2Conserjeria -f "$PDFNAME" "$CURRENT_PDF" ; then
+		msgtxt="   Su trabajo ha sido enviado con el nombre:\n   $PDFNAME\n   Para recogerlo, acuda a Conserjeria\n   y solicite que se lo impriman.   "
+	else
+		msgtxt="   Ha ocurrido un error. Por favor vuelva a imprimir el documento.   "
+	fi
 fi
-
 yad  --on-top --title "pdf2conserjeria" --text "$msgtxt" --button=gtk-ok || true
 
