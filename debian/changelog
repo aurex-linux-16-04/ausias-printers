@@ -1,3 +1,9 @@
+ausias-printers (0.24) trusty; urgency=medium
+
+  * Improved cups-pdf-postprocess
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 08 May 2015 12:25:40 +0200
+
 ausias-printers (0.23) trusty; urgency=medium
 
   *  New binary package: ausias-pdf-printer-set-default
