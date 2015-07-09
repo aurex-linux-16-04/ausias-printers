@@ -1,3 +1,9 @@
+ausias-printers (0.25) trusty; urgency=medium
+
+  * Changed ppd for Knoca Minolta Bizhub 20P (new: Samsumg's ppd)
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Thu, 09 Jul 2015 16:34:17 +0200
+
 ausias-printers (0.24) trusty; urgency=medium
 
   * Improved cups-pdf-postprocess
