@@ -1,3 +1,9 @@
+ausias-printers (0.26) xenial; urgency=medium
+
+  * Rebuild for aurex xenial 16.04
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 06 Sep 2016 16:09:40 +0200
+
 ausias-printers (0.25) trusty; urgency=medium
 
   * Changed ppd for Knoca Minolta Bizhub 20P (new: Samsumg's ppd)
