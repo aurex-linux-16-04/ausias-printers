@@ -1,3 +1,9 @@
+ausias-printers (0.27) xenial; urgency=medium
+
+  * Replace "Domain Users" with "all" to access network printers
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 21 Sep 2016 11:40:53 +0200
+
 ausias-printers (0.26) xenial; urgency=medium
 
   * Rebuild for aurex xenial 16.04

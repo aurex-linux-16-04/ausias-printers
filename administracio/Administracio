@@ -1,4 +1,4 @@
 # Orientacio printer
 PRINTER_PPD="foomatic-db-compressed-ppds:1/ppd/foomatic-ppd/Samsung-ML-3471ND-pxlmono.ppd"
 PRINTER_URI="ipp://xwarrior:631/printers/Administracio"
-PRINTER_ALLOW="@Domain Users"
+PRINTER_ALLOW="all"

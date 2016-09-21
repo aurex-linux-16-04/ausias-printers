@@ -1,4 +1,4 @@
 # Ausias March printer
 PRINTER_PPD="openprinting-ppds:0/ppd/openprinting/Ricoh/PXL/Ricoh-Aficio_MP_7500_PXL.ppd"
 PRINTER_URI="ipp://xwarrior:631/printers/AusiasPrint"
-PRINTER_ALLOW="@Domain Users"
+PRINTER_ALLOW="all"
