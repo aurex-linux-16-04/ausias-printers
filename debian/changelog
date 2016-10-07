@@ -1,3 +1,10 @@
+ausias-printers (0.28) xenial; urgency=medium
+
+  * Replace "Ricoh-Aficio MP 7500" driver with "Generic PCL 6/PCL XL Printer Foomatic/pxlmono"
+    in AusiasPrint trying to fix the strange and irrational "cuadriplication bug"
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 07 Oct 2016 13:31:42 +0200
+
 ausias-printers (0.27) xenial; urgency=medium
 
   * Replace "Domain Users" with "all" to access network printers
