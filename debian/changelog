@@ -1,3 +1,9 @@
+ausias-printers (0.29) xenial; urgency=medium
+
+  * Reverto to raw driver 
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Mon, 10 Oct 2016 20:05:22 +0200
+
 ausias-printers (0.28) xenial; urgency=medium
 
   * Replace "Ricoh-Aficio MP 7500" driver with "Generic PCL 6/PCL XL Printer Foomatic/pxlmono"
