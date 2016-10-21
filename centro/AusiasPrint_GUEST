@@ -2,4 +2,4 @@
 #PRINTER_PPD="openprinting-ppds:0/ppd/openprinting/Ricoh/PXL/Ricoh-Aficio_MP_7500_PXL.ppd"
 #PRINTER_PPD="foomatic-db-compressed-ppds:0/ppd/foomatic-ppd/Generic-PCL_6_PCL_XL_Printer-pxlmono.ppd"
 PRINTER_PPD="raw"
-PRINTER_URI="http://xwarrior:631/printers/AusiasPrint_DS"
+PRINTER_URI="ipp://xwarrior:631/printers/AusiasPrint_DS"

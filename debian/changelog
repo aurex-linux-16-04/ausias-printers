@@ -1,3 +1,10 @@
+ausias-printers (0.30) xenial; urgency=medium
+
+  * Changed from http to ipp as protocol to access printers in
+    'centro' package to get access to 'duplex' option
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 21 Oct 2016 13:09:38 +0200
+
 ausias-printers (0.29) xenial; urgency=medium
 
   * Reverto to raw driver 
