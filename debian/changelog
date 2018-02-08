@@ -1,3 +1,9 @@
+ausias-printers (0.31) xenial; urgency=medium
+
+  * Removed PRINTER_ALLOW due to crazy driver change with lpadmin -u allow:"all"
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Thu, 08 Feb 2018 12:41:35 +0100
+
 ausias-printers (0.30) xenial; urgency=medium
 
   * Changed from http to ipp as protocol to access printers in
