@@ -1,3 +1,9 @@
+ausias-printers (0.32) xenial; urgency=medium
+
+  * Moved ausias-papercut-client to Recommends
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Sun, 14 Oct 2018 18:02:23 +0200
+
 ausias-printers (0.31) xenial; urgency=medium
 
   * Removed PRINTER_ALLOW due to crazy driver change with lpadmin -u allow:"all"
